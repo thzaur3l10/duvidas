@@ -11,7 +11,7 @@ $senha = $_POST['senha'];
 
 
 //if(!empty($discliplina)){
-$sql = "insert into cliente(nome,email,telefone,sexo,cidade,estado,endereco) 
+$sql = "insert into cliente(email,senha) 
 values('$email','$senha')";
 
 
