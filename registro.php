@@ -10,53 +10,29 @@
     <link rel="stylesheet" href="/bomb.sp/style2.css">
 </head>
 <body>
-    <div class="box">
+<main class="container">
+        <h2>Registre-se</h2>
         <form action="/bomb.sp/insere.php" method="POST">
-            <fieldset>
-                <legend><b>Fórmulário de Clientes</b></legend>
-                <br>
-                <div class="inputBox">
-                    <input type="text" name="nome" id="nome" autocomplete="off" class="inputUser" required>
-                    <label for="nome" class="labelInput">Nome completo</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="email" id="email" autocomplete="off" class="inputUser" required>
-                    <label for="email" class="labelInput">Email</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="tel" name="telefone" id="telefone" autocomplete="off"  class="inputUser" required>
-                    <label for="telefone" class="labelInput">Telefone</label>
-                </div>
-                <p>Sexo:</p>
-                <input type="radio" id="feminino" name="genero" value="feminino" required>
-                <label for="feminino">Feminino</label>
-                <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required>
-                <label for="masculino">Masculino</label>
-                <br>
-                <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" autocomplete="off" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="estado" id="estado" autocomplete="off" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
-                </div>
-                <br><br>
-                <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" autocomplete="off" class="inputUser" required>
-                    <label for="endereco" class="labelInput">Endereço</label>
-                </div>
-                <br><br>
-                <input type="submit" name="submit" id="submit" value="Registrar">
-            </fieldset>
+            <div class="input-field">
+                <input type="email" name="email" id="email" autocomplete="off" required placeholder="Insira Seu Email">
+                <div class="underline"></div>
+            </div>
+            <div class="input-field">
+                <input type="password" name="password" id="password" autocomplete="off" required placeholder="Insira Sua Senha">
+                <div class="underline"></div>
+            </div> <br>
+            <div class="input-field">
+                <input type="password" name="senha" id="senha" autocomplete="off" required placeholder="Repita Sua Senha">
+                <div class="underline"></div>
+            </div> <br>
+            <div class="remember-me">
+                <input type="checkbox"><p>Lembrar de Mim</p>
+            <input type="submit" value="Continuar"><br>
         </form>
-    </div>
+
+        <p>Já Possui Cadastro?</p>
+        <a href="/bomb.sp/login.html"><input type="button" class="register" value="Logar"></a>
+    </main>
 </body>
+
 </html>
